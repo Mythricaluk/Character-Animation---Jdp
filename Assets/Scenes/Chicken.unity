@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -26212,6 +26212,7 @@ GameObject:
   - component: {fileID: 95943281986989397}
   - component: {fileID: 1844831654}
   - component: {fileID: 1844831653}
+  - component: {fileID: 95943281986989398}
   m_Layer: 0
   m_Name: Toon Chicken
   m_TagString: Untagged
@@ -26867,8 +26868,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311290279073385}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: d623cd35a78380d4eb0457c4e483abed, type: 3}
+  m_Controller: {fileID: 9100000, guid: 84dd067921f4e0045bb3a9a6e8fb7789, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -26879,6 +26880,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &95943281986989398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311290279073385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dff942889e0cf2d4aa7f53d474bf9dd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1844831653}
+  anim: {fileID: 95943281986989397}
+  runningSound: {fileID: 0}
+  runningSpeed: 4
+  rotationSpeed: 100
+  moveDir: {x: 0, y: 0, z: 0}
 --- !u!137 &137954050197036547
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
